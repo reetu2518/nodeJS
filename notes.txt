@@ -1,0 +1,4 @@
+code . ->command used for open editor
+for export -> module.exports=functionName
+
+when function doesn't have name they called anonymous function
