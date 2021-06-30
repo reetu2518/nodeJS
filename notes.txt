@@ -6,3 +6,17 @@ when function doesn't have name they called anonymous function
 //npm is a package manager for the JavaScript programming language.
 npm init -y //for creating package.json file
 npm uninstall pacakgeName //for uninstall npm library
+
+// package manager website
+https://www.npmjs.com/
+
+// email pacakgeName
+npm i nodemailer
+// allow fr sent mail
+https://myaccount.google.com/lesssecureapps
+
+
+//server restart solution
+npm install -g nodemon 
+OR
+npm -i --save-dev nodemon

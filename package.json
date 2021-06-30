@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/reetu2518/nodeJS#readme",
   "dependencies": {
+    "nodemailer": "^6.6.2",
     "return-uppercase-jagadhissh": "^1.0.0"
   }
 }
