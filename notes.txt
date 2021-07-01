@@ -20,3 +20,6 @@ https://myaccount.google.com/lesssecureapps
 npm install -g nodemon 
 OR
 npm -i --save-dev nodemon
+
+//mysql connection with nodejs
+npm install mysql
