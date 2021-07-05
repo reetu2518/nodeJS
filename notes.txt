@@ -23,3 +23,12 @@ npm -i --save-dev nodemon
 
 //mysql connection with nodejs
 npm install mysql
+
+
+//mongo db
+npm i mongoose
+
+db_ussr->mongo_user
+db_pwd->0W5JrhO8PEzmWRNg
+db->node_mongo
+
