@@ -24,6 +24,9 @@ npm -i --save-dev nodemon
 //mysql connection with nodejs
 npm install mysql
 
+// express js install
+npm i express
+
 
 //mongo db
 npm i mongoose
