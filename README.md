@@ -1,2 +1,2 @@
 # nodeJS
-nodesJS learning content
+nodesJS learning content for beginners
