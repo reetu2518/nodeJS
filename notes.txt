@@ -35,3 +35,5 @@ db_ussr->mongo_user
 db_pwd->0W5JrhO8PEzmWRNg
 db->node_mongo
 
+// express js install
+npm i ejs
