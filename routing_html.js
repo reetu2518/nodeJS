@@ -3,16 +3,31 @@ const app = express();
 app.set('view engine', 'ejs')
 
 // basic routing
-app.get("/", function(req,resp){
-    resp.sendFile(__dirname+"/test.html");
-})
-app.get("/login", function(req,resp){
-    resp.sendFile(__dirname+"/login.html");
-})
+// app.get("/", function(req,resp){
+//     resp.sendFile(__dirname+"/test.html");
+// })
+// app.get("/login", function(req,resp){
+//     resp.sendFile(__dirname+"/login.html");
+// })
 
 // routing with dynamic values
+// app.get("/profile/:name", function(req,resp){
+//     resp.render("Profile", {name:req.params.name});
+// })
+
+// dynamic content
+app.get("/", function(req,resp){
+    resp.render("Home");
+})
+app.get("/login", function(req,resp){
+    resp.render("Login");
+})
+app.get("/about", function(req,resp){
+    resp.render("About");
+})
 app.get("/profile/:name", function(req,resp){
-    resp.render("Profile", {name:req.params.name});
+    data = {email:"trst@gmail.com", address:"123/2 kanpur", skills:['php', 'node','react', 'python']}
+    resp.render("Profile", {name:req.params.name, data:data});
 })
 
 app.listen(5000)

@@ -1,4 +1,12 @@
+<%- include('common/nav') -%>
 <html>
-    <h1>login file</h1>
+    <h1>Dynamic content </h1>
     <h3>Hi, <%= name %></h3>
+    <h4>Email: <%= data.email %></h4>
+    <h4>Address: <%= data.address %></h4>
+    <ul>
+        <% data.skills.forEach(function(item){ %>
+            <li><%= item %></li>
+        <% }) %>
+    </ul>
 </html>
