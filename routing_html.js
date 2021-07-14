@@ -1,5 +1,9 @@
 const express = require("express")
 const app = express();
+
+// adding middelware for call style file by express
+app.use("/assets", express.static("assets"))
+
 app.set('view engine', 'ejs')
 
 // basic routing
@@ -20,6 +24,7 @@ app.get("/", function(req,resp){
     resp.render("Home");
 })
 app.get("/login", function(req,resp){
+    console.log(req.query)
     resp.render("Login");
 })
 app.get("/about", function(req,resp){
