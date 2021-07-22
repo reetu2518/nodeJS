@@ -37,3 +37,6 @@ db->node_mongo
 
 // express js install
 npm i ejs
+
+//install body parser
+npm i body-parser
