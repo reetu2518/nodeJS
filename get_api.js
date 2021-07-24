@@ -34,5 +34,28 @@ app.post('/user',jsonParser, function(req,res){
     .catch(err=>console.warn(err))
 })
 
+// delete api
+app.delete('/user/:id', function(req,res){
+    User.deleteOne({_id:req.params.id}).then((result)=>{
+        res.status(200).json(result);
+    }).catch(err=>console.warn(err))
+})
+
+// update api
+app.put('/user/:id',jsonParser, function(req,res){
+    User.updateOne(
+        {_id:req.params.id},
+        {$set:
+            {
+               name: req.body.name,
+               email: req.body.email,
+               address: req.body.address,
+            }
+        }
+    ).then((result)=>{
+        res.status(202).json(result);
+    }).catch(err=>console.warn(err))
+});
+
 
 app.listen(5000)
