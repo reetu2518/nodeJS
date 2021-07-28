@@ -58,4 +58,13 @@ app.put('/user/:id',jsonParser, function(req,res){
 });
 
 
+// search api
+app.get('/search/:name', function(req,res){
+    var regex = new RegExp(req.params.name, 'i');
+    User.find({name:regex}).then((result)=>{
+        res.status(203).json(result);
+    }).catch(err=>console.warn(err))
+});
+
+
 app.listen(5000)
